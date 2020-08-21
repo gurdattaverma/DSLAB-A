@@ -40,7 +40,7 @@ void arrayinsert(int lb, int ub, int list[], int item, int pos, int max ){
 	for(int i=ub; ; )	{
 		list[i]=list[i-1];
 		i=i-1;
-		if(i==pos-1){
+		if(i==pos-1+lb){      //changed if(i==pos-1) t0 if(i==pos-1+lb)
 			///if lb =0 
 			break;
 		}
