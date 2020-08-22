@@ -24,6 +24,11 @@ int main(){
 void arraytraverse(int a[],int lb,int ub,int max){
 	if(ub>max){
 		cout<<"Error";
+		return;
+	}
+	if(lb>ub){
+		cout<<"Error";
+		return;
 	}
 	for(int i=lb;i<=ub;i++)
 	{cout<<"\t"<<a[i];
@@ -40,6 +45,6 @@ void evensum(int a[],int lb,int ub,int max){
     }
 		cout<<endl<<"Even Sum= "<<sum<<endl;
 			
-}
+	}
 
 
