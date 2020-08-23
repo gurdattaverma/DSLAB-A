@@ -17,19 +17,18 @@ int arraydel(int lb, int ub, int list[], int max, int item){
 			cout<<"LB Error";
 			return -1;
 		}
-		int i;
+		int i,found=0;
 		for(i=lb;i<=ub;i++){
-			if(list[i]==item){
-				chk=1;
-				break;
+			if(list[i]==item)
+			{
+				found=1;
 			}
+			if(found==1)
+			{
+				list[j]=list[j+1];
+			}	
 		}
-		if(chk==0){
-			return -1;
-		}
-		for(int j=i;j<=ub;j++){
-			list[j]=list[j+1];
-		}
+		
 		cout<<"\n";
 		arraytraverse(lb,ub,list,5);
 		return 1;
