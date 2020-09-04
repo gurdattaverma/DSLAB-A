@@ -40,12 +40,12 @@ void arrayinsert(int lb, int ub, int list[], int item, int pos, int max ){
 	for(int i=ub; ; )	{
 		list[i]=list[i-1];
 		i=i-1;
-		if(i==pos-1){
+		if(i==pos+(lb-1)){
 			///if lb =0 
 			break;
 		}
 	}
-	list[pos-1]=item;
+	list[pos+(lb-1)]=item;
 	cout<<"\n";
 	//print after
 	arraytraverse(lb,ub,list,max);
