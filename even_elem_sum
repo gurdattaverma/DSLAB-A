@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  //Program for 5 elements
+  //sum stores sum of even elements
+    int arr[5]={1,2,3,4,5},sum=0;
+    cout<<"Enter 5 values "<<endl;
+    //taking values and adding sum of even elements
+    for(int i=0;i<5;i++)
+    {  
+      cin>>arr[i];
+      if(i%2==0)
+      {
+        sum=sum+arr[i];
+      }
+    }
+    //printing sum of even elements of array
+    cout<<sum<<endl;
+}   
